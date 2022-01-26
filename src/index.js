@@ -1,5 +1,7 @@
+import {value} from "./dep.js";
+
 const b = await (async () => {
-	return 3;
+	return 3 + value;
 })();
 
 export const handler = async (event) => {
